@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema por defecto (Light Mode) -->
+    <style name="Theme.SitioMovies" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/netflix_red</item>
+        <item name="colorPrimaryVariant">@color/netflix_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/netflix_gray</item>
+        <item name="colorSecondaryVariant">@color/netflix_dark_gray</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- Tema para Dark Mode -->
+    <style name="Theme.SitioMovies.Dark" parent="Theme.SitioMovies">
+
+        <item name="android:windowBackground">@color/netflix_black</item>
+        <item name="colorOnBackground">@color/white</item>
+    </style>
+
+    <!-- Tema para High Contrast -->
+    <style name="Theme.SitioMovies.HighContrast" parent="Theme.SitioMovies">
+
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

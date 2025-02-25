@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/netflix_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:drawableLeft="@android:drawable/ic_menu_crop"
+            android:text="Nueva Película"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/NetflixInputLayout"
+            app:boxBackgroundColor="@color/netflix_input_background"
+            app:boxStrokeColor="@color/netflix_red"
+            app:hintTextColor="@color/netflix_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Imagen URL"
+                android:textColor="@color/white"
+                android:textColorHint="@color/netflix_gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/NetflixInputLayout"
+            app:boxBackgroundColor="@color/netflix_input_background"
+            app:boxStrokeColor="@color/netflix_red"
+            app:hintTextColor="@color/netflix_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Título"
+                android:textColor="@color/white"
+                android:textColorHint="@color/netflix_gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/NetflixInputLayout"
+            app:boxBackgroundColor="@color/netflix_input_background"
+            app:boxStrokeColor="@color/netflix_red"
+            app:hintTextColor="@color/netflix_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Genero"
+                android:textColor="@color/white"
+                android:textColorHint="@color/netflix_gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/NetflixInputLayout"
+                app:boxBackgroundColor="@color/netflix_input_background"
+                app:boxStrokeColor="@color/netflix_red"
+                app:hintTextColor="@color/netflix_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Año"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/netflix_gray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:theme="@style/NetflixInputLayout"
+                app:boxBackgroundColor="@color/netflix_input_background"
+                app:boxStrokeColor="@color/netflix_red"
+                app:hintTextColor="@color/netflix_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDirector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Director"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/netflix_gray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/NetflixInputLayout"
+                app:boxBackgroundColor="@color/netflix_input_background"
+                app:boxStrokeColor="@color/netflix_red"
+                app:hintTextColor="@color/netflix_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Duracion (mins)"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/netflix_gray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:theme="@style/NetflixInputLayout"
+                app:boxBackgroundColor="@color/netflix_input_background"
+                app:boxStrokeColor="@color/netflix_red"
+                app:hintTextColor="@color/netflix_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Rating"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/netflix_gray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:theme="@style/NetflixInputLayout"
+            app:boxBackgroundColor="@color/netflix_input_background"
+            app:boxStrokeColor="@color/netflix_red"
+            app:hintTextColor="@color/netflix_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripcion"
+                android:minLines="4"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:textColorHint="@color/netflix_gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/netflix_red"
+            android:padding="16dp"
+            android:text="Agregar"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:icon="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
+</ScrollView>
